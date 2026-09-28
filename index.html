@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlayerTrack, una idea de Toros Aztecas F.C. para registrar y analizar el rendimiento de futbolistas.">
+  <title>PlayerTrack | Toros Aztecas F.C.</title>
+  <style>
+    :root { --vino:#6b1835; --vino-oscuro:#451023; --beige:#f3eadc; --tinta:#211b1d; --gris:#645e61; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--tinta); line-height:1.6; }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:18px 7%; background:#fff; border-bottom:1px solid #e9e3e0; }
+    .marca { color:var(--vino); font-size:1.25rem; font-weight:800; text-decoration:none; }
+    .marca span { display:block; color:var(--gris); font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+    nav a { color:var(--tinta); text-decoration:none; margin-left:20px; }
+    nav a:hover { color:var(--vino); }
+    .hero { min-height:65vh; display:grid; place-items:center; padding:80px 7%; text-align:center; background:linear-gradient(135deg,var(--beige),#fff); }
+    .hero-inner { max-width:800px; }
+    .etiqueta { color:var(--vino); font-size:.82rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { font-size:clamp(2.4rem,6vw,4.8rem); line-height:1.07; margin:12px 0 24px; }
+    .hero p { color:var(--gris); font-size:1.14rem; max-width:690px; margin:0 auto 30px; }
+    .boton { display:inline-block; padding:14px 25px; border-radius:9px; background:var(--vino); color:#fff; font-weight:700; text-decoration:none; }
+    .boton:hover { background:var(--vino-oscuro); }
+    .funciones { max-width:1200px; margin:auto; padding:78px 7% 90px; }
+    .encabezado { text-align:center; margin-bottom:38px; }
+    h2 { font-size:clamp(1.8rem,4vw,2.5rem); line-height:1.2; margin:0 0 10px; }
+    .encabezado p, .tarjeta p { color:var(--gris); }
+    .tarjetas { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .tarjeta { border:1px solid #e8e0dc; border-radius:16px; padding:28px; background:#fff; box-shadow:0 10px 28px rgba(40,18,25,.05); }
+    .icono { display:grid; place-items:center; width:48px; height:48px; border-radius:12px; background:var(--beige); font-size:1.3rem; }
+    h3 { margin:18px 0 8px; }
+    .tarjeta p { margin:0; }
+    footer { background:var(--tinta); color:#eee; padding:28px 7%; text-align:center; }
+    footer p { margin:0; }
+    @media (max-width:760px) { .tarjetas { grid-template-columns:1fr; } nav { flex-direction:column; text-align:center; } nav a { margin:0 9px; } .hero { min-height:55vh; } }
+  </style>
+</head>
+<body>
+  <nav aria-label="Navegación principal">
+    <a class="marca" href="#inicio">PlayerTrack<span>Una idea de Toros Aztecas F.C.</span></a>
+    <div><a href="#inicio">Inicio</a><a href="#funciones">Funciones</a><a href="#contacto">Contacto</a></div>
+  </nav>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="etiqueta">Talento respaldado por datos</div>
+        <h1>Cada minuto cuenta. Cada jugador tiene una historia.</h1>
+        <p>En Toros Aztecas F.C. formamos futbolistas sin perder de vista su educación. PlayerTrack es una idea de aplicación para reunir el rendimiento en cancha y los avances escolares de cada jugador, de modo que entrenadores y familias puedan acompañar su desarrollo.</p>
+        <a class="boton" href="#funciones">Conoce la idea</a>
+      </div>
+    </section>
+    <section class="funciones" id="funciones">
+      <div class="encabezado">
+        <h2>Un lugar para seguir su evolución</h2>
+        <p>Una propuesta para dar seguimiento al jugador dentro y fuera de la cancha.</p>
+      </div>
+      <div class="tarjetas">
+        <article class="tarjeta"><div class="icono" aria-hidden="true">⚽</div><h3>Registro de partidos</h3><p>Guarda rivales, fechas, minutos, goles, asistencias y otros datos de cada encuentro.</p></article>
+        <article class="tarjeta"><div class="icono" aria-hidden="true">📚</div><h3>Seguimiento académico</h3><p>Registra avances escolares y asesorías para acompañar la formación de cada futbolista junto con su familia.</p></article>
+        <article class="tarjeta"><div class="icono" aria-hidden="true">📈</div><h3>Seguimiento del progreso</h3><p>Compara partidos y temporadas para reconocer avances y detectar áreas de mejora.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer id="contacto"><p>© 2026 Toros Aztecas F.C. · PlayerTrack es un mockup académico, no una aplicación activa.</p></footer>
+</body>
+</html>
